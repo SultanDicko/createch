@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CreaTech - L'Afrique Digitale en Action</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --main-color: #003366;
+      --accent-color: #ff9900;
+      --light-color: #fdfdfd;
+      --gradient: linear-gradient(135deg, #003366, #0059b3);
+      --text-dark: #222;
+      --text-light: #fff;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f1f3f6;
+      color: var(--text-dark);
+    }
+    header {
+      background: var(--gradient);
+      color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav a {
+      margin-left: 2rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--accent-color);
+    }
+    .hero {
+      background: linear-gradient(to right, #003366, #0073e6);
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem 5rem;
+    }
+    .hero h2 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      animation: fadeDown 1s ease-in-out;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .btn {
+      background-color: var(--accent-color);
+      color: var(--text-dark);
+      padding: 1rem 2rem;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      margin-top: 2rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #e68a00;
+    }
+    .section {
+      padding: 5rem 2rem;
+      max-width: 1300px;
+      margin: auto;
+      animation: fadeDown 1s ease-in-out;
+    }
+    .section h3 {
+      font-size: 2.7rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: var(--main-color);
+    }
+    .services, .packs, .advantages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 14px;
+      border-top: 4px solid var(--accent-color);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.1);
+    }
+    .card strong {
+      display: block;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      color: var(--main-color);
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 28px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .whatsapp-float i {
+      line-height: 60px;
+    }
+    footer {
+      background-color: #002244;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 1rem;
+    }
+    footer p {
+      margin: 0.3rem 0;
+    }
+    @media (max-width: 768px) {
+      nav a {
+        margin-left: 1rem;
+      }
+      .hero h2 {
+        font-size: 2.4rem;
+      }
+      .hero p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CreaTech</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#packs">Packs</a>
+      <a href="#why">Pourquoi CreaTech ?</a>
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Réinventons l’Afrique digitale ensemble</h2>
+    <p>Chez <strong>CreaTech</strong>, nous marions <em>innovation, technologie et expertise africaine</em> pour propulser vos idées, projets et entreprises vers un avenir numérique plus puissant et plus durable. Nous ne faisons pas que coder : nous créons, accompagnons et faisons grandir.</p>
+    <a href="https://wa.me/22661967267" target="_blank"><button class="btn">Discutons de votre projet</button></a>
+  </section>
+
+  <main>
+    <section class="section" id="services">
+      <h3>Nos Services</h3>
+      <div class="services">
+        <div class="card">
+          <strong>Applications Mobiles & Web</strong>
+          Développement d'applications performantes et intuitives sur mesure pour gérer, vendre, informer ou connecter. Conçues pour répondre aux réalités africaines tout en respectant les standards internationaux.
+        </div>
+        <div class="card">
+          <strong>Sites Internet Modernes</strong>
+          Sites vitrines, boutiques en ligne ou plateformes professionnelles : design soigné, navigation fluide et visibilité assurée sur les moteurs de recherche.
+        </div>
+        <div class="card">
+          <strong>Maintenance Informatique</strong>
+          Un service fiable et réactif pour garantir la performance continue de vos équipements et systèmes informatiques.
+        </div>
+        <div class="card">
+          <strong>Intelligence Artificielle (IA)</strong>
+          Automatisez vos tâches, analysez vos données, prévoyez vos résultats. L’IA chez CreaTech est mise au service de votre croissance, quel que soit votre secteur.
+        </div>
+        <div class="card">
+          <strong>Marketing Digital</strong>
+          Stratégies de communication digitales adaptées à votre public cible : réseaux sociaux, contenus, publicités et e-réputation.
+        </div>
+        <div class="card">
+          <strong>Conseil & Accompagnement</strong>
+          Nous vous guidons à chaque étape avec des conseils stratégiques, techniques et pratiques pour transformer vos idées en réussites concrètes.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="packs">
+      <h3>Nos Offres Mensuelles</h3>
+      <div class="packs">
+        <div class="card">
+          <strong>Pack Essentiel</strong>
+          Idéal pour débuter dans le digital avec efficacité et sérénité. Vous obtenez l’essentiel pour être visible, fonctionnel et soutenu.
+          <br><em>Frais d’inscription = 1 mois</em>
+        </div>
+        <div class="card">
+          <strong>Pack Pro</strong>
+          Pensé pour les entrepreneurs ambitieux : application ou site pro + IA intégrée + marketing digital. Un vrai levier de croissance.
+          <br><em>Frais d’inscription = 1 mois</em>
+        </div>
+        <div class="card">
+          <strong>Pack Premium</strong>
+          Une solution complète et personnalisée. Audit stratégique, design sur mesure, IA, marketing, suivi et accompagnement intensif.
+          <br><em>Frais d’inscription = 1 mois</em>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <h3>Pourquoi choisir CreaTech ?</h3>
+      <div class="advantages">
+        <div class="card">
+          ✅ Une équipe 100% africaine, ancrée localement et tournée vers l’avenir. Nous comprenons vos réalités et vos ambitions.
+        </div>
+        <div class="card">
+          🚀 Accompagnement stratégique et technique à chaque étape. Vous n’êtes jamais seul, nous sommes vos partenaires de croissance.
+        </div>
+        <div class="card">
+          🤖 Des outils modernes (IA, cloud, automatisation) accessibles à tous. Même avec un budget limité, vous pouvez innover et réussir.
+        </div>
+        <div class="card">
+          💡 Un regard neuf sur vos idées : nos solutions sont à la fois créatives, concrètes et rentables.
+        </div>
+        <div class="card">
+          📊 Objectifs, résultats, performance : nous travaillons avec vous sur du mesurable, du durable et du visible.
+        </div>
+        <div class="card">
+          🌍 Une vision panafricaine forte : nous croyons que la technologie doit servir à connecter, autonomiser et élever nos communautés.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h3>Qui sommes-nous ?</h3>
+      <p><strong>CreaTech</strong> est une entreprise technologique innovante née à Ouagadougou, au Burkina Faso, fondée par Dicko Ismael Boubacar. Notre objectif : offrir des solutions numériques concrètes, efficaces et accessibles à toutes les entreprises, institutions et porteurs de projet africains.</p>
+      <p>Chez nous, chaque mission est une collaboration, chaque client un partenaire et chaque projet une opportunité de transformation digitale pour l’Afrique. Nous croyons au pouvoir de la technologie quand elle est adaptée, expliquée et bien utilisée.</p>
+    </section>
+
+    <section class="section" id="contact">
+      <h3>Contactez-nous</h3>
+      <p>📍 Siège : Ouagadougou, Burkina Faso</p>
+      <p>📱 WhatsApp : +226 61967267 / 07106484</p>
+      <p>✉️ Email : sultandicko@gmail.com</p>
+    </section>
+  </main>
+
+  <a href="https://wa.me/22661967267" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    <p>&copy; 2025 CreaTech</p>
+    <p>Créativité, Réinvention, Excellence pour l’Afrique digitale.</p>
+    <p>Site designé avec passion et vision pour transformer l’avenir.</p>
+  </footer>
+</body>
+</html>
