@@ -3,6 +3,6 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "echo 'Static site, nothing to build'"
+    "build": "rm -rf dist/client && mkdir -p dist/client && cp -r index.html packs services dist/client/"
   }
 }
