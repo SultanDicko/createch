@@ -1,282 +1,387 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CreaTech - L'Afrique Digitale en Action</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    :root {
-      --main-color: #003366;
-      --accent-color: #ff9900;
-      --light-color: #fdfdfd;
-      --gradient: linear-gradient(135deg, #003366, #0059b3);
-      --text-dark: #222;
-      --text-light: #fff;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f1f3f6;
-      color: var(--text-dark);
-    }
-    header {
-      background: var(--gradient);
-      color: white;
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    nav a {
-      margin-left: 2rem;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: var(--accent-color);
-    }
-    .hero {
-      background: linear-gradient(to right, #003366, #0073e6);
-      color: white;
-      text-align: center;
-      padding: 6rem 2rem 5rem;
-    }
-    .hero h2 {
-      font-size: 3.2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.3rem;
-      max-width: 850px;
-      margin: 0 auto;
-    }
-    .btn {
-      background-color: var(--accent-color);
-      color: var(--text-dark);
-      padding: 1rem 2rem;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-      margin-top: 2rem;
-      font-size: 1rem;
-      border-radius: 6px;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .btn:hover {
-      background-color: #e68a00;
-    }
-    .section {
-      padding: 5rem 2rem;
-      max-width: 1300px;
-      margin: auto;
-    }
-    .section h3 {
-      font-size: 2.7rem;
-      margin-bottom: 2rem;
-      text-align: center;
-      color: var(--main-color);
-    }
-    .section h3::after {
-      content: '';
-      display: block;
-      width: 60px;
-      height: 4px;
-      background-color: var(--accent-color);
-      margin: 1rem auto 0;
-    }
-    .services, .packs, .advantages {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-    }
-    .card {
-      background: white;
-      padding: 2rem;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-      border-radius: 14px;
-      border-top: 4px solid var(--accent-color);
-      transition: all 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 14px 28px rgba(0,0,0,0.1);
-    }
-    .card strong {
-      display: block;
-      margin-bottom: 1rem;
-      font-size: 1.3rem;
-      color: var(--main-color);
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: var(--accent-color);
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .card a:hover {
-      background-color: #e68a00;
-    }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      text-align: center;
-      font-size: 28px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-      z-index: 1000;
-    }
-    .whatsapp-float i {
-      line-height: 60px;
-    }
-    footer {
-      background-color: #002244;
-      color: white;
-      text-align: center;
-      padding: 2rem;
-      font-size: 1rem;
-    }
-    footer p {
-      margin: 0.3rem 0;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CreaTech — Applications, sites web, IA et formations à Ouagadougou</title>
+  <meta name="description" content="CreaTech conçoit applications mobiles, sites internet et solutions d&#x27;intelligence artificielle pour les entreprises africaines, et forme vos équipes. Basés à Ouagadougou, Burkina Faso.">
+  <link rel="canonical" href="https://createchbf.com/">
+  <meta name="theme-color" content="#071a33">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="CreaTech">
+  <meta property="og:title" content="CreaTech — Applications, sites web, IA et formations à Ouagadougou">
+  <meta property="og:description" content="CreaTech conçoit applications mobiles, sites internet et solutions d&#x27;intelligence artificielle pour les entreprises africaines, et forme vos équipes. Basés à Ouagadougou, Burkina Faso.">
+  <meta property="og:url" content="https://createchbf.com/">
+  <meta property="og:image" content="https://createchbf.com/assets/img/og-createch.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"CreaTech","url":"https://createchbf.com/","logo":"https://createchbf.com/assets/img/logo-createch.png","image":"https://createchbf.com/assets/img/og-createch.jpg","email":"ismaeldicko@createchbf.com","telephone":"+22661967267","address":{"@type":"PostalAddress","addressLocality":"Ouagadougou","addressCountry":"BF"},"areaServed":"Afrique de l'Ouest","description":"Applications mobiles, sites internet, intelligence artificielle, marketing digital, maintenance informatique et formations à Ouagadougou."}
+  </script>
 </head>
 <body>
-  <header>
-    <h1>CreaTech</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#packs">Packs</a>
-      <a href="#why">Pourquoi CreaTech ?</a>
-      <a href="#about">À propos</a>
-      <a href="#contact">Contact</a>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="CreaTech — accueil">
+      <img src="assets/img/logo-wordmark.png" alt="CreaTech" width="220" height="45">
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <a href="index.html#services">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="index.html#packs">Packs</a>
+      <a href="formations.html">Formations</a>
+      <a href="index.html#apropos">À propos</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="btn btn-whatsapp nav-mobile-only" href="https://wa.me/22661967267?text=Bonjour%20CreaTech%2C%20je%20souhaite%20discuter%20de%20mon%20projet." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Discuter sur WhatsApp</a>
     </nav>
-  </header>
+    <div class="header-cta">
+      <a class="btn btn-brand btn-sm" href="index.html#contact">Demander un devis</a>
+      <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Ouvrir le menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+<main id="contenu">
 
   <section class="hero">
-    <h2>Réinventons l’Afrique digitale ensemble</h2>
-    <p>Chez <strong>CreaTech</strong>, nous marions <em>innovation, technologie et expertise africaine</em> pour propulser vos idées, projets et entreprises vers un avenir numérique plus puissant et plus durable.</p>
-    <a href="https://wa.me/22661967267" target="_blank" class="btn">Discutons de votre projet</a>
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow"><i class="fa-solid fa-location-dot"></i> Agence numérique à Ouagadougou</span>
+        <h1>Des solutions numériques <span class="hl">qui font avancer</span> votre activité.</h1>
+        <p class="lead">CreaTech conçoit des applications mobiles, des sites internet et des outils d'intelligence artificielle pour les entreprises, ONG et porteurs de projets africains. Et nous formons vos équipes pour qu'elles en tirent le meilleur.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Démarrer un projet <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn btn-ghost" href="realisations.html">Voir nos réalisations</a>
+        </div>
+        <div class="hero-trust">
+          <span><i class="fa-solid fa-circle-check"></i> Android, iOS &amp; web</span>
+          <span><i class="fa-solid fa-circle-check"></i> Paiement Mobile Money intégré</span>
+          <span><i class="fa-solid fa-circle-check"></i> Suivi après livraison</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card c1"><img src="assets/img/projets/ekip.webp" alt=""></div>
+        <div class="hero-card c3"><img src="assets/img/projets/faso-cash.webp" alt=""></div>
+        <div class="hero-card c2"><img src="assets/img/projets/livroo.webp" alt="" style="object-fit:contain"></div>
+        <div class="hero-badge"><i class="fa-solid fa-mobile-screen-button"></i><div>6 applications<small>conçues par CreaTech</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="CreaTech en chiffres">
+    <div class="container stats-grid">
+      <div class="stat"><strong>6</strong><span>applications développées</span></div>
+      <div class="stat"><strong>7</strong><span>sites web réalisés</span></div>
+      <div class="stat"><strong>24–48 h</strong><span>délai d'intervention</span></div>
+      <div class="stat"><strong>6</strong><span>domaines de formation</span></div>
+    </div>
   </section>
 
   <section class="section" id="services">
-    <h3>Nos Services</h3>
-    <div class="services">
-      <div class="card">
-        <strong>Applications Mobiles & Web</strong>
-        Développement sur mesure, rapide et fluide pour Android, iOS et le web.
-        <a href="services/applications.html">En savoir plus</a>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Nos services</span>
+        <h2>Tout votre numérique, au même endroit</h2>
+        <p>De l'idée à la mise en ligne, puis au suivi : une seule équipe pour concevoir, développer, promouvoir et maintenir vos outils.</p>
       </div>
-      <div class="card">
-        <strong>Sites Internet Modernes</strong>
-        Sites vitrines, e-commerce ou institutionnels, avec design pro et SEO.
-        <a href="services/sites.html">En savoir plus</a>
+      <div class="grid grid-3">
+      <a class="card reveal" href="services/applications.html">
+        <div class="icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <h3>Applications mobiles & web</h3>
+        <p>Apps Android, iOS et web sur mesure, avec paiement mobile, géolocalisation et tableaux de bord.</p>
+        <span class="card-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+      <a class="card reveal" href="services/sites.html">
+        <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <h3>Sites internet</h3>
+        <p>Sites vitrines, e-commerce et institutionnels, rapides, adaptés au mobile et visibles sur Google.</p>
+        <span class="card-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+      <a class="card reveal" href="services/ia.html">
+        <div class="icon"><i class="fa-solid fa-robot"></i></div>
+        <h3>Intelligence artificielle</h3>
+        <p>Chatbots WhatsApp, automatisation des tâches répétitives, analyse de données et IA générative.</p>
+        <span class="card-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+      <a class="card reveal" href="services/marketing.html">
+        <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
+        <h3>Marketing digital</h3>
+        <p>Gestion des réseaux sociaux, publicités ciblées, référencement et création de contenus.</p>
+        <span class="card-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+      <a class="card reveal" href="services/maintenance.html">
+        <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h3>Maintenance informatique</h3>
+        <p>Dépannage sous 24 à 48 h, installation réseau, sauvegardes et contrats de maintenance.</p>
+        <span class="card-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+      <a class="card reveal" href="services/conseil.html">
+        <div class="icon"><i class="fa-solid fa-compass"></i></div>
+        <h3>Conseil & accompagnement</h3>
+        <p>Diagnostic, stratégie numérique, choix des technologies et suivi après le lancement.</p>
+        <span class="card-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
       </div>
-      <div class="card">
-        <strong>Maintenance Informatique</strong>
-        Intervention rapide, sécurisation et assistance continue pour vos équipements.
-        <a href="services/maintenance.html">En savoir plus</a>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="realisations">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Réalisations</span>
+        <h2>Ils nous ont fait confiance</h2>
+        <p>Applications mobiles, plateformes et sites internet conçus par CreaTech pour des entreprises et des projets d'ici.</p>
       </div>
-      <div class="card">
-        <strong>Intelligence Artificielle</strong>
-        Chatbots, automatisation, IA générative, analyse des données, prédictions.
-        <a href="services/ia.html">En savoir plus</a>
+      <div class="grid grid-3">
+      <article class="project reveal" data-type="app">
+        <div class="project-media contain" style="background:#1f2152"><img src="assets/img/projets/livroo.webp" alt="Livroo" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-type">Application mobile · Livraison</div>
+          <h3>Livroo</h3>
+          <p>Vos supermarchés à domicile : l'application de courses en ligne livrées chez vous, avec son back-office de gestion des commandes.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Laravel</span><span class="tag">Firebase</span></div>
+        </div>
+      </article>
+      <article class="project reveal" data-type="app">
+        <div class="project-media" style="background:#0b1622"><img src="assets/img/projets/ekip.webp" alt="L&#x27;Ékip" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-type">Application mobile · Sport & eSport</div>
+          <h3>L'Ékip</h3>
+          <p>Réservation de terrains, équipes, tournois et défis eSport, avec paiement Wave, Orange Money, Moov Money et Telecel Cash. En partenariat avec Keovisun.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Laravel</span><span class="tag">Mobile Money</span></div>
+        </div>
+      </article>
+      <article class="project reveal" data-type="app">
+        <div class="project-media contain" style="background:#ffffff"><img src="assets/img/projets/voyage-moins-cher.webp" alt="Voyage moins cher" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-type">Application mobile · Voyage</div>
+          <h3>Voyage moins cher</h3>
+          <p>Recherche et réservation de billets d'avion au meilleur prix, de la sélection du vol jusqu'aux informations passagers.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Laravel</span><span class="tag">Réservation</span></div>
+        </div>
+      </article>
       </div>
-      <div class="card">
-        <strong>Marketing Digital</strong>
-        Gestion réseaux sociaux, publicités ciblées, campagnes et branding digital.
-        <a href="services/marketing.html">En savoir plus</a>
-      </div>
-      <div class="card">
-        <strong>Conseil & Accompagnement</strong>
-        Diagnostic, stratégie numérique, choix technos et accompagnement global.
-        <a href="services/conseil.html">En savoir plus</a>
+      <div class="section-foot">
+        <a class="btn btn-brand" href="realisations.html">Voir les 13 réalisations <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
   <section class="section" id="packs">
-    <h3>Nos Offres Mensuelles</h3>
-    <div class="packs">
-      <div class="card">
-        <strong>Pack Essentiel — 35 000 F / mois</strong>
-        Idéal pour débuter dans le digital avec efficacité et sérénité.
-        <br><em>Frais d’inscription = 1 mois</em>
-        <a href="packs/essentiel.html">Voir détails</a>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Packs mensuels</span>
+        <h2>Un accompagnement continu, un prix fixe</h2>
+        <p>Votre présence numérique créée, maintenue et améliorée chaque mois. Sans surprise sur la facture.</p>
       </div>
-      <div class="card">
-        <strong>Pack Pro — 50 000 F / mois</strong>
-        Pensé pour les entrepreneurs ambitieux.
-        <br><em>Frais d’inscription = 1 mois</em>
-        <a href="packs/pro.html">Voir détails</a>
+      <div class="pricing">
+      <div class="price-card reveal">
+        
+        <h3>Pack Essentiel</h3>
+        <p class="price-for">Pour démarrer sa présence numérique : artisans, petits commerces, associations.</p>
+        <div class="price">35 000 <small>F CFA / mois</small></div>
+        <p class="price-note">Frais d'inscription : 1 mois d'abonnement</p>
+        <ul class="checklist"><li><i class="fa-solid fa-check"></i>Site vitrine simple ou petite application</li><li><i class="fa-solid fa-check"></i>Assistance technique sous 48 h</li><li><i class="fa-solid fa-check"></i>Maintenance mensuelle de base</li><li><i class="fa-solid fa-check"></i>Formule clé en main</li><li class="off"><i class="fa-solid fa-minus"></i>Intégration d'intelligence artificielle</li><li class="off"><i class="fa-solid fa-minus"></i>Accompagnement stratégique</li></ul>
+        <a class="btn btn-outline btn-block" href="packs/essentiel.html">Voir le détail</a>
       </div>
-      <div class="card">
-        <strong>Pack Premium — 75 000 F / mois</strong>
-        Solution complète et personnalisée.
-        <br><em>Frais d’inscription = 1 mois</em>
-        <a href="packs/premium.html">Voir détails</a>
+      <div class="price-card featured reveal">
+        <span class="price-badge">Le plus choisi</span>
+        <h3>Pack Pro</h3>
+        <p class="price-for">Pour les PME en croissance qui veulent plus de visibilité et d'automatisation.</p>
+        <div class="price">50 000 <small>F CFA / mois</small></div>
+        <p class="price-note">Frais d'inscription : 1 mois d'abonnement</p>
+        <ul class="checklist"><li><i class="fa-solid fa-check"></i>Site ou application personnalisé à votre image</li><li><i class="fa-solid fa-check"></i>Intégration IA : chatbot, automatisation</li><li><i class="fa-solid fa-check"></i>Référencement Google + pages Facebook / Instagram</li><li><i class="fa-solid fa-check"></i>Rapport mensuel de performance</li><li class="off"><i class="fa-solid fa-minus"></i>Accompagnement stratégique hebdomadaire</li></ul>
+        <a class="btn btn-brand btn-block" href="packs/pro.html">Voir le détail</a>
+      </div>
+      <div class="price-card reveal">
+        
+        <h3>Pack Premium</h3>
+        <p class="price-for">Pour les institutions, ONG et start-ups qui veulent accélérer leur transformation.</p>
+        <div class="price">75 000 <small>F CFA / mois</small></div>
+        <p class="price-note">Frais d'inscription : 1 mois d'abonnement</p>
+        <ul class="checklist"><li><i class="fa-solid fa-check"></i>Audit numérique complet</li><li><i class="fa-solid fa-check"></i>Stratégie digitale et design premium</li><li><i class="fa-solid fa-check"></i>IA avancée : prédictions, scoring, automatisation</li><li><i class="fa-solid fa-check"></i>Outils marketing pro : emailing, tunnels, retargeting</li><li><i class="fa-solid fa-check"></i>Accompagnement stratégique hebdomadaire</li></ul>
+        <a class="btn btn-outline btn-block" href="packs/premium.html">Voir le détail</a>
+      </div>
+      </div>
+      <p class="section-foot" style="color:var(--muted);margin-top:28px">Besoin d'un projet ponctuel plutôt qu'un abonnement ? <a href="#contact"><strong>Demandez un devis sur mesure</strong></a>.</p>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="formations">
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--accent)">Formations</span>
+        <h2>Formez vos équipes aux outils d'aujourd'hui</h2>
+        <p>Intelligence artificielle, comptabilité, bureautique, marketing digital, développement web, maintenance : des formations pratiques, en petit groupe ou dans votre entreprise.</p>
+        <div class="price-tag"><span>À partir de</span> <strong>100 000 F CFA</strong></div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="formations.html">Découvrir les formations <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="grid grid-2 reveal">
+        <div class="feature"><div class="icon"><i class="fa-solid fa-robot"></i></div><div><h3>Intelligence artificielle</h3><p>ChatGPT, automatisation, création de contenus.</p></div></div>
+        <div class="feature"><div class="icon"><i class="fa-solid fa-calculator"></i></div><div><h3>Comptabilité</h3><p>Comptabilité générale, SYSCOHADA, logiciels.</p></div></div>
+        <div class="feature"><div class="icon"><i class="fa-solid fa-table"></i></div><div><h3>Bureautique</h3><p>Word, Excel, PowerPoint, du débutant à l'avancé.</p></div></div>
+        <div class="feature"><div class="icon"><i class="fa-solid fa-bullhorn"></i></div><div><h3>Marketing digital</h3><p>Réseaux sociaux, publicité, WhatsApp Business.</p></div></div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="why">
-    <h3>Pourquoi choisir CreaTech ?</h3>
-    <div class="advantages">
-      <div class="card">🎓 Une équipe bien formée, issue de grandes écoles internationales, revenue bâtir l’Afrique avec passion, compétence et engagement.</div>
-      <div class="card">🚀 Accompagnement stratégique et technique à chaque étape.</div>
-      <div class="card">🤖 Des outils modernes (IA, cloud, automatisation) accessibles à tous.</div>
-      <div class="card">💡 Un regard neuf sur vos idées : solutions créatives, concrètes et rentables.</div>
-      <div class="card">📊 Objectifs, résultats, performance : mesurable et durable.</div>
-      <div class="card">🌍 Une vision panafricaine : connecter, autonomiser et élever nos communautés.</div>
+  <section class="section" id="methode">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Notre méthode</span>
+        <h2>Un projet clair, de bout en bout</h2>
+        <p>Vous savez à chaque étape où en est votre projet et ce qui vient ensuite.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="step-num">1</div><h3>Écoute</h3><p>Nous échangeons sur votre activité, vos objectifs et votre budget.</p></div>
+        <div class="step reveal"><div class="step-num">2</div><h3>Proposition</h3><p>Vous recevez une solution détaillée, un planning et un prix clair.</p></div>
+        <div class="step reveal"><div class="step-num">3</div><h3>Réalisation</h3><p>Nous concevons et développons, avec des points réguliers et vos retours.</p></div>
+        <div class="step reveal"><div class="step-num">4</div><h3>Suivi</h3><p>Mise en ligne, formation à l'utilisation, maintenance et améliorations.</p></div>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="about">
-    <h3>Qui sommes-nous ?</h3>
-    <p><strong>CreaTech</strong> est une entreprise technologique innovante née à Ouagadougou, Burkina Faso. Nous offrons des solutions numériques concrètes, efficaces et accessibles à toutes les entreprises africaines.</p>
-    <p>Chaque mission est une collaboration, chaque client un partenaire, chaque projet une opportunité pour transformer l’Afrique avec la technologie.</p>
+  <section class="section section-alt" id="pourquoi">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Pourquoi CreaTech</span>
+        <h2>Une expertise internationale, ancrée au Burkina</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="feature reveal"><div class="icon"><i class="fa-solid fa-graduation-cap"></i></div><div><h3>Une équipe formée à l'international</h3><p>Des profils issus de grandes écoles, revenus construire des solutions pour l'Afrique.</p></div></div>
+        <div class="feature reveal"><div class="icon"><i class="fa-solid fa-earth-africa"></i></div><div><h3>Pensé pour le terrain</h3><p>Mobile Money, connexion limitée, usage sur smartphone : nos outils sont faits pour vos clients.</p></div></div>
+        <div class="feature reveal"><div class="icon"><i class="fa-solid fa-bolt"></i></div><div><h3>Technologies modernes</h3><p>Flutter, Laravel, cloud et IA : des outils fiables qui évoluent avec votre activité.</p></div></div>
+        <div class="feature reveal"><div class="icon"><i class="fa-solid fa-handshake"></i></div><div><h3>Un partenaire, pas un prestataire</h3><p>Nous restons à vos côtés après la livraison pour ajuster et faire grandir votre projet.</p></div></div>
+        <div class="feature reveal"><div class="icon"><i class="fa-solid fa-chart-line"></i></div><div><h3>Des résultats mesurables</h3><p>Objectifs fixés au départ et suivis dans le temps : visites, contacts, ventes.</p></div></div>
+        <div class="feature reveal"><div class="icon"><i class="fa-solid fa-scale-balanced"></i></div><div><h3>Prix transparents</h3><p>Des packs à prix fixe ou un devis détaillé : vous savez ce que vous payez.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="apropos">
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow">À propos</span>
+        <h2>Réinventons l'Afrique digitale ensemble</h2>
+        <p>CreaTech est une entreprise technologique née à Ouagadougou, au Burkina Faso. Nous accompagnons les PME, les ONG, les institutions et les porteurs de projets dans leur transformation numérique, avec des solutions concrètes, efficaces et accessibles.</p>
+        <p>Chaque mission est une collaboration, chaque client un partenaire, chaque projet une occasion de transformer l'Afrique par la technologie.</p>
+        <a class="btn btn-brand" href="#contact" style="margin-top:8px">Travaillons ensemble</a>
+      </div>
+      <div class="about-panel reveal">
+        <img src="assets/img/logo-createch.png" alt="CreaTech — Création, Réinvention, Excellence pour l'Afrique" width="640" height="187" loading="lazy">
+        <div class="values">
+          <div><strong>C</strong><span>Création</span></div>
+          <div><strong>R</strong><span>Réinvention</span></div>
+          <div><strong>E</strong><span>Excellence</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Questions fréquentes</span>
+        <h2>Vous vous posez des questions ?</h2>
+      </div>
+      <div class="faq reveal">
+        <details><summary>Combien coûte un site ou une application ?</summary><p>Nos packs mensuels démarrent à 35 000 F CFA par mois (frais d'inscription : un mois d'abonnement) et incluent la création, la maintenance et l'assistance. Pour un projet ponctuel, nous établissons un devis détaillé après un premier échange.</p></details>
+        <details><summary>En combien de temps mon projet est-il prêt ?</summary><p>Cela dépend de son ampleur. Nous fixons ensemble un planning dès la proposition, avec des étapes de validation, pour que vous sachiez toujours où en est votre projet.</p></details>
+        <details><summary>Que se passe-t-il après la mise en ligne ?</summary><p>Nous vous formons à l'utilisation de votre outil, puis nous assurons la maintenance, les mises à jour et l'assistance. C'est inclus dans tous nos packs.</p></details>
+        <details><summary>Pouvez-vous intégrer Orange Money, Moov Money ou Wave ?</summary><p>Oui. Nous intégrons les moyens de paiement mobile utilisés au quotidien par vos clients, comme nous l'avons fait pour l'application L'Ékip.</p></details>
+        <details><summary>Combien coûtent vos formations ?</summary><p>Nos formations démarrent à 100 000 F CFA. Le prix final dépend du thème, de la durée et du nombre de participants. Contactez-nous pour un programme adapté.</p></details>
+        <details><summary>Travaillez-vous en dehors de Ouagadougou ?</summary><p>Nous sommes basés à Ouagadougou et pouvons accompagner des projets à distance, au Burkina Faso comme ailleurs.</p></details>
+      </div>
+    </div>
   </section>
 
   <section class="section" id="contact">
-    <h3>Contactez-nous</h3>
-    <p>📍 Siège : Ouagadougou, Burkina Faso</p>
-    <p>📱 WhatsApp : +226 61967267 / 07106484</p>
-    <p>✉️ Email : sultandicko@gmail.com</p>
+    <div class="container contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Contact</span>
+        <h2>Parlons de votre projet</h2>
+        <p style="color:var(--muted)">Décrivez votre besoin en quelques lignes : nous vous répondons rapidement avec une proposition adaptée.</p>
+        <ul class="contact-list">
+          <li><div class="icon green"><i class="fa-brands fa-whatsapp"></i></div><div><strong>WhatsApp</strong><a href="https://wa.me/22661967267" target="_blank" rel="noopener">+226 61 96 72 67</a></div></li>
+          <li><div class="icon"><i class="fa-solid fa-phone"></i></div><div><strong>Téléphone</strong><a href="tel:+22661967267">+226 61 96 72 67</a> · <a href="tel:+22607106484">+226 07 10 64 84</a></div></li>
+          <li><div class="icon"><i class="fa-solid fa-envelope"></i></div><div><strong>Email</strong><a href="mailto:ismaeldicko@createchbf.com">ismaeldicko@createchbf.com</a></div></li>
+          <li><div class="icon orange"><i class="fa-solid fa-location-dot"></i></div><div><strong>Siège</strong><span>Ouagadougou, Burkina Faso</span></div></li>
+        </ul>
+      </div>
+      <form class="form-card reveal" id="contact-form">
+        <div class="form-row">
+          <div class="field"><label for="nom">Nom complet</label><input id="nom" name="nom" required autocomplete="name"></div>
+          <div class="field"><label for="entreprise">Entreprise <span style="color:var(--muted);font-weight:500">(facultatif)</span></label><input id="entreprise" name="entreprise" autocomplete="organization"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="telephone">Téléphone</label><input id="telephone" name="telephone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="besoin">Votre besoin</label><select id="besoin" name="besoin"><option value="Applications mobiles & web">Applications mobiles & web</option><option value="Sites internet">Sites internet</option><option value="Intelligence artificielle">Intelligence artificielle</option><option value="Marketing digital">Marketing digital</option><option value="Maintenance informatique">Maintenance informatique</option><option value="Conseil & accompagnement">Conseil & accompagnement</option><option value="Formation">Formation</option><option value="Pack mensuel">Pack mensuel</option><option value="Autre">Autre</option></select></div>
+        </div>
+        <div class="field"><label for="message">Votre message</label><textarea id="message" name="message" required placeholder="Décrivez votre projet, vos objectifs, vos délais…"></textarea></div>
+        <button class="btn btn-whatsapp btn-block" type="submit"><i class="fa-brands fa-whatsapp"></i> Envoyer via WhatsApp</button>
+        <p class="form-hint">Votre message s'ouvre dans WhatsApp, prêt à être envoyé.</p>
+      </form>
+    </div>
   </section>
+</main>
 
-  <a href="https://wa.me/22661967267" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo-wordmark-blanc.png" alt="CreaTech" width="200" height="41" loading="lazy">
+        <p>Création, Réinvention, Excellence pour l'Afrique. Applications, sites, IA et formations, depuis Ouagadougou.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services/applications.html">Applications mobiles & web</a></li>
+          <li><a href="services/sites.html">Sites internet</a></li>
+          <li><a href="services/ia.html">Intelligence artificielle</a></li>
+          <li><a href="services/marketing.html">Marketing digital</a></li>
+          <li><a href="services/maintenance.html">Maintenance informatique</a></li>
+          <li><a href="services/conseil.html">Conseil & accompagnement</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>CreaTech</h4>
+        <ul>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="index.html#packs">Packs mensuels</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="index.html#apropos">À propos</a></li>
+          <li><a href="index.html#faq">Questions fréquentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i><span>Ouagadougou, Burkina Faso</span></li>
+          <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/22661967267" target="_blank" rel="noopener">+226 61 96 72 67</a></li>
+          <li><i class="fa-solid fa-phone"></i><a href="tel:+22607106484">+226 07 10 64 84</a></li>
+          <li><i class="fa-solid fa-envelope"></i><a href="mailto:ismaeldicko@createchbf.com">ismaeldicko@createchbf.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> CreaTech. Tous droits réservés.</span>
+      <span>Ouagadougou, Burkina Faso</span>
+    </div>
+  </div>
+</footer>
 
-  <footer>
-    <p>&copy; 2025 CreaTech</p>
-    <p>Créativité, Réinvention, Excellence pour l’Afrique digitale.</p>
-    <p>Site designé avec passion et vision pour transformer l’avenir.</p>
-  </footer>
+<a class="whatsapp-float" href="https://wa.me/22661967267?text=Bonjour%20CreaTech%2C%20je%20souhaite%20discuter%20de%20mon%20projet." target="_blank" rel="noopener" aria-label="Nous écrire sur WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

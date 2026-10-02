@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://createchbf.com/sitemap.xml
