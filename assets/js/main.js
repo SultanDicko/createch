@@ -1,6 +1,6 @@
 // CreaTech — scripts communs
 (function () {
-  var WHATSAPP = '22661967267';
+  var WHATSAPP = '22607106484';
 
   // Menu mobile
   var toggle = document.querySelector('.nav-toggle');
